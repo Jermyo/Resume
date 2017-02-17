@@ -1,0 +1,593 @@
+body {
+    position: relative;
+    font: 12px/1.5em "Microsoft YaHei", tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+    color: #666;
+    text-align: left;
+    background: #f4f4f4;
+    min-width: 1000px;
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0 none;
+}
+
+input {
+    outline: none;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+s, em, i {
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+canvas {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.cf:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    zoom: 1;
+}
+
+#head {
+    width: 100%;
+    height: 527px;
+    background-color: #5ec2e7;
+    overflow: hidden;
+}
+
+.mar {
+    width: 990px;
+    margin: 0 auto;
+}
+
+#head .nav {
+    height: 50px;
+    margin-top: 50px;
+    padding-left: 138px;
+
+}
+
+#head .mar .nav-list {
+    text-align: center;
+    float: left;
+    line-height: 43px;
+    list-style: none;
+    margin-left: 43px;
+    font-size: 16px;
+    height: 43px;
+    width: 97px;
+}
+
+#head .mar .nav-list a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+
+}
+
+#head .mar .nav-list a:after {
+    content: "";
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 30px;
+    height: 2px;
+    opacity: 0;
+    background: #2e3846;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+
+#head .mar .nav-list a:hover:after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/*è®¾ç½®å¤´åƒ*/
+#head .Tx-Mr-L {
+    width: 180px;
+    height: 180px;
+    border: 8px solid #fff;
+    background: #9fa0b4;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    margin: 65px auto 20px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transition: all .5s linear;
+    animation-delay: 300ms;
+    animation-name: fadeInTop;
+}
+
+#head .Tx-Mr-L:hover {
+    background: #ddd;
+    border: 8px solid #9fa0b4;
+}
+
+#head .Tx-Mr-L .Move-TX {
+    position: relative;
+    width: 621px;
+    height: 180px;
+}
+
+#head .Tx-Mr-L i {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 47%;
+}
+
+#head .Tx-Mr-L i:nth-child(1) {
+    background: url("../img/me-1.jpg") no-repeat 0 0;
+    left: 0px;
+}
+
+#head .Tx-Mr-L i:nth-child(2) {
+    background: url("../img/me-2.jpg") no-repeat 0 0;
+    left: 250px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+#head .Tx-Mr-L i:nth-child(3) {
+    background: url("../img/me-3.jpg") no-repeat 0 0;
+    left: 500px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+#head .introduce {
+    text-align: center;
+}
+
+#head .introduce .introduce-name {
+    font-size: 60px;
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-top: 0px;
+    animation-delay: 600ms;
+    animation-name: fadeInTop;
+}
+
+#head .introduce .introduce-text {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 47px;
+    text-align: center;
+    animation-delay: 600ms;
+    animation-name: fadeInTop;
+}
+
+#head .introduce .fadeInRight {
+    -webkit-animation-name: fadeInTop;
+    animation-name: fadeInTop;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        margin-top: 70px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 47px;
+    }
+}
+
+#product {
+    height: 550px;
+    text-align: center;
+}
+#product .product-head{
+    text-align: center;
+}
+
+.product-name {
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.product-underline {
+    width: 0px;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background-color: #3a3a3a;
+}
+
+.product-text {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#product .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    height: 435px;
+}
+
+#product .swiper-container .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+#product .swiper-container .swiper-slide .product-link {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    background: -webkit-linear-gradient(top, #fff, #ff0511);
+    left: 0px;
+    opacity: .95;
+    top: 230px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 70px;
+    font-size: 16px;
+}
+
+#Skill {
+    height: 650px;
+    background-color: #ffffff;
+    padding-top: 27px;
+}
+
+#Skill .Skill-head {
+    text-align: center;
+}
+
+#Skill .Skill-name {
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 25px;
+}
+
+#Skill .Skill-text {
+    margin-top: 5px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+#Skill .Skill-underline {
+    width: 150px;
+    height: 2px;
+    display: block;
+    margin: 5px auto;
+    background-color: #3a3a3a;
+}
+
+#Skill .Skill-middle .advantageBox {
+    position: relative;
+    margin-top: 20px;
+    cursor: default;
+    overflow: hidden;
+    padding: 0 2%;
+}
+
+#Skill .Skill-middle .advantageFont {
+    margin-left: 14px;
+    transition: all 2s;
+    color: white;
+}
+
+#Skill .Skill-middle .advantageFont:hover {
+    margin-left: 30px;
+}
+
+#Skill .Skill-middle .advantageFont3 {
+    margin-top: 38px;
+    font-size: 20px;
+    color: white;
+}
+
+#Skill .Skill-middle .advantageFont1 {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#Skill .Skill-middle .advantageIMG {
+    margin-top: -7px;
+    margin-left: 10px;
+    /*transition: all 2s;*/
+}
+
+#Skill .Skill-middle .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5ec2e7;
+    transition: all 1s;
+}
+
+#Skill .Skill-middle .background:hover {
+    opacity: .8;
+}
+
+#my-data {
+    height: 500px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: white;
+}
+
+#my-data .UWY-fff {
+    position: relative;
+    width: 810px;
+    margin: 44px auto;
+}
+
+#my-data .wrap .tp_my p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#my-data .UWY-fff .BF-85-85-70 {
+    position: absolute;
+    top: 37px;
+    z-index: 10;
+}
+
+#my-data .UWY-fff .BF-85-85-70 li {
+    width: 220px;
+    height: 212px;
+    /* margin: 0 200px; */
+    text-align: center;
+    margin-right: 75px;
+}
+
+#my-data .UWY-fff .BF-85-85-70 li > div {
+    margin-top: 60px;
+}
+
+#my-data .UWY-fff .BF-85-85-70 li > div b {
+    font-size: 40px;
+}
+
+#my-data .UWY-fff .BF-85-85-70 li > div span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8e8e8e;
+    letter-spacing: 1px;
+}
+
+#my-data .UWY-fff .BF-85-85-70 li:last-child {
+    margin-right: 0px;
+}
+
+.left {
+    float: left;
+}
+
+#person {
+    height: 580px;
+    background-color: #ff605f;
+    padding-top: 27px
+}
+
+#person .person-head {
+    text-align: center;
+    color: white;
+}
+
+#person .person-time {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid rgb(96, 179, 1);
+}
+
+#person .person-time canvas {
+    /*border: 1px solid #ff0511;*/
+    border-radius: 50%;
+    /*position: absolute;*/
+    z-index: 20;
+}
+
+#person .person-data {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#person .person-head .person-underline {
+    background-color: white;
+}
+
+#person .person-data p {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#person .person-data .person-under {
+    height: 1px;
+    width: 700px;
+    background-color: white;
+    margin: 5px auto;
+}
+#contact{
+    height: 400px;
+}
+#contact .contact-head{
+    text-align: center;
+}
+#contact .contact-iphone{
+    height: 80px;
+    text-align: center;
+    margin-top: 20px;
+}
+#contact .contact-text{
+    text-align: center;
+    margin: 0 auto;
+}
+#contact .contact-text .big-head{
+    margin-top: 40px;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+#contact .contact-text .big-head:nth-child(1){
+    color: #ff099d;
+}
+#contact .contact-text .big-head:nth-child(2){
+    color: #ff4707;
+}
+#contact .contact-text .big-head:nth-child(3){
+    color: #31ff08;
+}
+#contact .contact-text .big-head:nth-child(4){
+    color: #0059ff;
+}
+#contact .contact-text .roll{
+    margin-top: 22px;
+    position: relative;
+    height: 112px;
+    overflow: hidden;
+}
+#contact .contact-text .roll p{
+    margin-top: 10px;
+    top: 3px;
+    left: 400px;
+    position: absolute;
+}
+#contact .contact-iphone li{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 32px;
+    margin-right: 32px;
+    position: relative;
+    margin-top: 33px;
+}
+#contact .contact-iphone .icon{
+    background: url("../img/icon.jpg") no-repeat ;
+}
+
+
+#contact .contact-iphone .wechat{
+    background-position: -8px -23px;
+}
+#contact .contact-iphone .qq{
+    background-position: -246px -24px;
+}
+#contact .contact-iphone .iphone{
+    background-position: -174px -21px;
+}
+#contact .contact-iphone .eaail{
+    background-position: -95px -20px;
+}
+#contact .contact-iphone i{
+    position: absolute;
+    top: 70px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    display: none;
+    z-index: 999;
+}
+#contact .contact-iphone .wechat i{
+    background: url("../img/wecha.jpg") no-repeat;
+}
+#contact .contact-iphone .qq i{
+    background: url("../img/qq.jpg") no-repeat;
+}
+#contact .contact-iphone i a{
+    display: block;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid rgba(204, 0, 167, 0);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    border-top: 10px solid rgba(204, 0, 167, 0);
+    border-right: 10px solid rgba(204, 0, 167, 0);
+    top: -20px;
+    left: 41px;
+}
+
+#map{
+    height: 400px;
+    background-color: #2e6da4;
+}
+
+#allmap{
+    height: 200px;
+}
+#foot_BK{  width: 100%;  height:290px;  background: #363842;  }
+#foot_BK:before{  content:"";  display:table;  }
+.ie678 #foot_BK{  border-top: 1px solid #363842;  }
+#foot_BK .wrap{  height: 290px;  background:#363842;  }
+#foot_BK .wrap:before{  content: "";  display:table;  }
+.ie678 #foot_Bk{  border-top:1px solid #363842; }
+/*é»‘è‰²å†…å®¹éƒ¨åˆ†*/
+#foot_BK .BCK-Text{  overflow:hidden;  margin-top: 60px; }
+#foot_BK .BCK-Text li{  width: 230px; text-align:center; }
+#foot_BK .BCK-Text li>b{  display:inline-block; color:#fff;  margin-bottom:20px;}
+#foot_BK .BCK-Text li>ul>li{ margin-bottom:10px; }
+
+
+#foot_BK .BCK-Text li>ul>li a{
+
+    font-size:14px;
+    color:#545766;
+    /*color:red;*/
+}
+
+
