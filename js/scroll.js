@@ -39,13 +39,11 @@ $(document).ready(function () {
             if(indexicon>3){
                 indexicon=0;
             }
-            console.log(indexicon);
             $icon.eq(indexicon).show();
         },1000)
     }
     $(window).scroll(function () {
         var top = $(document).scrollTop();
-        console.log(top);
         if (top > 0) {
             $underline1.animate({width: '150px',}, 'slow');
         }
